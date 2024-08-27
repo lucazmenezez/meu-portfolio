@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/code-slash.svg" type="image/x-icon">
+    <title>SitePronto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#home">
+                <img class="title-header" src="images/logo_sitepronto_transparent.png" alt="logo da empresa Site Pronto">
+            </a>
+            <div class="menu-hamburguer" id="menu-toggle">
+                <i class="bi bi-list"></i>
+                <i class="bi bi-x"></i>
+            </div>
+            <nav id="header-buttons">
+                <ul>
+                    <li>
+                        <a href="#home">Início</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#services" class="submenu-toggle">Serviços</a><i class="bi bi-chevron-down"></i>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#benefits">Benefícios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#projects">Projetos</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#about" class="submenu-toggle">Sobre</a><i class="bi bi-chevron-down"></i>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#history">História</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#faq">Dúvidas</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="title">Lucas Menezes</h2>
+                <div class="text-animation">
+                    <span class="description first-text"></span>
+                    <span class="description second-text"></span>
+                </div>
+                <p class="text">Sem um site, você está perdendo vendas! 81% dos clientes pesquisam online antes de comprar. Garanta seu site hoje mesmo!</p>
+                <div class="buttons">
+                    <a href="https://wa.me/41984589855?text=Olá,%20tenho%20interesse%20nos%20seus%20serviços!" target="_blank">Vamos conversar <i class="bi bi-whatsapp"></i></a>
+                    <a href="#services">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container" data-aos="fade-down">
+            <h2 class="section-title">Meus Serviços</h2>
+            <ul class="services-list">
+                <li class="services-list-item">
+                    <i class="bi bi-code-slash"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Desenvolvo websites modernos e funcionais com foco em tecnologias atuais, assegurando excelente performance e uma experiência de usuário envolvente.</p>
+                </li>
+                <li class="services-list-item">
+                    <i class="bi bi-phone"></i>
+                    <h3>Responsividade</h3>
+                    <p>Crio sites que se adaptam a qualquer dispositivo, garantindo uma experiência perfeita em desktops, tablets e smartphones. Dessa forma, seus usuários terão acesso a um conteúdo otimizado, independentemente da tela utilizada.</p>
+                </li>
+                <li class="services-list-item">
+                    <i class="bi bi-pencil-square"></i>
+                    <h3>Criação do Conteúdo</h3>
+                    <p>Crio textos atraentes que melhoram o SEO e engajam seus visitantes. Se você não tiver conteúdo, eu mesmo elaboro e adiciono textos personalizados para seu site.</p>
+                </li>
+                <li class="services-list-item" data-aos="fade-up">
+                    <i class="bi bi-speedometer2"></i>
+                    <h3>Otimização de Velocidade</h3>
+                    <p>Aumente a performance do seu site com técnicas de otimização, garantindo carregamento rápido e melhor experiência para os usuários.</p>
+                </li>
+                <li class="services-list-item" data-aos="fade-up">
+                    <i class="bi bi-cloud-upload"></i>
+                    <h3>Domínio e Hospedagem</h3>
+                    <p>Gerencio todo o processo de publicação do seu site, desde a configuração de domínio até a hospedagem, garantindo uma transição sem problemas para a web.</p>
+                </li>
+                <li class="services-list-item support-service" data-aos="fade-up">
+                    <i class="bi bi-tools"></i>
+                    <h3>Manutenção e Suporte de Sites</h3>
+                    <p>Ofereço manutenção e suporte para garantir o ótimo funcionamento do seu site. O custo é separado e ajustado conforme necessário. Entre em contato para mais detalhes e mantenha seu site atualizado!</p>
+                </li>
+            </ul>
+            <p class="disclaimer" data-aos="fade-right">
+                <strong>Nota:</strong> O pagamento pelos serviços de domínio e hospedagem é de total responsabilidade do cliente. Eu realizo todo o processo de configuração e publicação do site, mas os custos são pagos diretamente pelo cliente aos provedores de serviço.
+            </p>
+            <div class="benefits" id="benefits" data-aos="fade-down" data-aos-duration="1000">
+                <h3 class="benefits-title">Por que Seu Negócio Precisa de um Site?</h3>
+                <ul class="benefits-list">
+                    <li class="benefits-list-item">
+                        <i class="bi bi-eye"></i>
+                        <h4>Aumente sua Visibilidade</h4>
+                        <p>
+                            Seu negócio acessível 24/7. Potenciais clientes podem encontrar sua empresa a qualquer hora, de qualquer lugar.
+                        </p>
+                    </li>
+                    <li class="benefits-list-item">
+                        <i class="bi bi-shield-check"></i>
+                        <h4>Construa Credibilidade</h4>
+                        <p>
+                            Um site bem projetado passa confiança e profissionalismo, estabelecendo sua marca no mercado.
+                        </p>
+                    </li>
+                    <li class="benefits-list-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Expanda seu Alcance</h4>
+                        <p>
+                            Não se limite ao tráfego local. Alcance clientes em outras regiões e aumente suas oportunidades de vendas.
+                        </p>
+                    </li>
+                    <li class="benefits-list-item">
+                        <i class="bi bi-person-plus"></i>
+                        <h4>Atraia Mais Clientes</h4>
+                        <p>
+                            Com uma estratégia de SEO eficaz, seu site pode aparecer nos primeiros resultados do Google, trazendo mais tráfego qualificado.
+                        </p>
+                    </li>
+                    <li class="benefits-list-item">
+                        <i class="bi bi-chat-dots"></i>
+                        <h4>Facilite a Comunicação</h4>
+                        <p>
+                            Adicione chat, formulários e links para redes sociais para interagir facilmente com seus clientes.
+                        </p>
+                    </li>
+                    <li class="benefits-list-item">
+                        <i class="bi bi-stars"></i>
+                        <h4>Melhore a Experiência do Cliente</h4>
+                        <p>
+                            Forneça informações detalhadas, responda a perguntas frequentes e ofereça suporte online, tornando a experiência do cliente mais conveniente.
+                        </p>
+                    </li>
+                    <li class="benefits-list-item">
+                        <i class="bi bi-trophy"></i>
+                        <h4>Diferencie-se da Concorrência</h4>
+                        <p>
+                            Destaque seus diferenciais e crie uma identidade única para sua marca, ajudando você a se destacar no mercado.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cta" data-aos="flip-left">
+                <h3>Interessado em nossos serviços?</h3>
+                <p>Entre em contato conosco hoje mesmo para discutir suas necessidades e começar seu projeto!</p>
+                <div class="cta-whatsapp">
+                    <a href="https://wa.me/41984589855?text=Olá,%20tenho%20interesse%20nos%20seus%20serviços!" target="_blank">
+                        <i class="bi bi-whatsapp"></i> Fale Conosco pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Veja meus Projetos</h2>
+            <div class="projects-content" data-aos="zoom-in">
+                <img src="./images/projeto_bootstrap400x500.jpg" alt="capa projeto restaurante">
+                <div class="projects-flex">
+                    <h3>Restaurante com Bootstrap</h3>
+                    <p>
+                        Este projeto de restaurante, desenvolvido com Bootstrap, oferece uma experiência moderna e responsiva. Inclui cabeçalho fixo, menu hambúrguer, carrossel de imagens, seções sobre o restaurante e eventos, cardápio com abas interativas, e formulário de contato funcional com jQuery. A responsividade garante navegação fluida em qualquer dispositivo.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="devicon-html5-plain"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-css3-plain"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-javascript-plain"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-jquery-plain"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-bootstrap-plain"></i>
+                        </li>
+                    </ul>
+                    <div class="buttons-project">
+                        <a class="button1" href="https://github.com/lucazmenezez/projeto3_bootstrap_restaurante" target="_blank">
+                            Github
+                        </a>
+                        <a class="button2" href="https://lucas-projeto-restaurante.vercel.app/" target="_blank">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content reverse" data-aos="zoom-in">
+                <img src="./images/projeto_disneyplus400x500.jpg" alt="capa projeto clone disney+">
+                <div class="projects-flex">
+                    <h3>Clone do Disney+</h3>
+                    <p>
+                        Este projeto é um clone da interface do Disney+, desenvolvido utilizando HTML, Sass, JavaScript e Gulp. O objetivo foi recriar a aparência visual do serviço de streaming, com funcionalidades básicas de navegação e animações suaves para uma experiência de usuário agradável. O projeto inclui componentes responsivos e práticas de design moderno.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="devicon-html5-plain"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-css3-plain"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-sass-original"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-javascript-plain"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-gulp-plain"></i>
+                        </li>
+                    </ul>
+                    <div class="buttons-project">
+                        <a class="button1" href="https://github.com/lucazmenezez/clone_disneyplus" target="_blank">
+                            Github
+                        </a>
+                        <a class="button2" href="https://clone-disneyplus-one-rho.vercel.app/" target="_blank">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container" data-aos="zoom-in-down">
+            <h2 class="section-title">Sobre mim</h2>
+            <div class="about-content">
+                <img src="./images/foto_pessoal_400x400.jpg" alt="Foto pessoal de rosto Lucas Menezes" data-aos="flip-up" data-aos-delay="400">
+                <div class="about-text" data-aos="fade-up" data-aos-delay="400">
+                    <p>
+                        Olá! Sou Lucas Menezes, um desenvolvedor web de 22 anos de Curitiba, PR. Com quase um ano de experiência em programação, sou aluno do curso de Full Stack na Escola Britânica de Artes Criativas & Tecnologia (EBAC).
+                    </p>
+                    <p>
+                        Como freelancer, me especializo em criar sites, blogs, landing pages e portfólios que sejam fáceis de usar, rápidos e bem otimizados para os motores de busca. Também posso criar todo o conteúdo do seu site, garantindo que ele seja visualmente atraente e envolvente. Se você está procurando um site de alta qualidade, estou aqui para transformar suas ideias em realidade. Vamos conversar e descobrir como posso ajudar no seu projeto!
+                    </p>
+                    <div class="skills">
+                        <h3>Minhas Habilidades</h3>
+                        <div class="skills-icons">
+                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-css3-plain"></i>
+                            <i class="devicon-javascript-plain"></i>
+                            <i class="devicon-bootstrap-plain"></i>
+                            <i class="devicon-jquery-plain"></i>
+                            <i class="devicon-sass-original"></i>
+                            <i class="devicon-less-plain-wordmark"></i>
+                            <i class="devicon-gulp-plain"></i>
+                            <i class="devicon-grunt-plain"></i>
+                            <i class="devicon-nodejs-plain"></i>
+                            <i class="devicon-npm-original-wordmark"></i>
+                            <i class="devicon-babel-plain"></i>
+                            <i class="devicon-typescript-plain"></i>
+                        </div>
+                    </div>
+                    <h3 class="title-links">Onde me achar</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/siteprontoweb/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contatodasitepronto@gmail.com" target="_blank">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/lucazmenezez" target="_blank">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/lucas-menezes-39b310256/" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline" id="history" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="timeline-title">Conheça um pouco da minha história</h3>
+                <div class="timeline-items">
+                    <div class="timeline-item" data-aos="zoom-in-right">
+                        <div class="timeline-dot"></div>
+                        <div class="date">2016 - 2023</div>
+                        <div class="timeline-content">
+                            <h4>Formação e Crescimento</h4>
+                            <p>
+                                Comecei minha carreira como auxiliar de produção em janeiro de 2016, aos 13 anos. Nesse período, aprendi a importância da responsabilidade, enfrentando desafios e cometendo erros que me ajudaram a amadurecer. Essa experiência foi fundamental para meu desenvolvimento pessoal e profissional, construindo a base para a ética de trabalho que sigo até hoje.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="zoom-in-left">
+                        <div class="timeline-dot"></div>
+                        <div class="date">2023</div>
+                        <div class="timeline-content">
+                            <h4>A Jornada no Inglês</h4>
+                            <p>
+                                Em janeiro de 2023, decidi aprender inglês, mesmo sem grandes expectativas iniciais. Comprei um curso e, desde então, venho me dedicando intensamente. Hoje, posso dizer com orgulho que alcancei um nível avançado, refletindo minha evolução e persistência ao longo desse processo. Aprender inglês também me deu a confiança necessária para mergulhar no mundo da programação, abrindo novas portas para minha carreira.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="zoom-in-right">
+                        <div class="timeline-dot"></div>
+                        <div class="date">10/2023</div>
+                        <div class="timeline-content">
+                            <h4>A Transição para a Programação</h4>
+                            <p>
+                                No final de 2023, por motivos fora do meu controle, saí do meu emprego. Com isso, decidi finalmente dar o primeiro passo na programação, um campo que já cogitava há algum tempo, mas com receio de não conseguir. Inicialmente, comprei um curso de desenvolvimento, mas, enfrentando dificuldades com a metodologia, optei por cancelar e investir no curso de Desenvolvedor Full Stack da EBAC - Escola Britânica de Artes Criativas e Tecnologia, onde continuo estudando até o momento.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="zoom-in-left">
+                        <div class="timeline-dot"></div>
+                        <div class="date">19/12/2023</div>
+                        <div class="timeline-content">
+                            <h4>O Primeiro Projeto</h4>
+                            <p>
+                                Em 19 de dezembro de 2023, com a orientação dos professores do curso, construí meu primeiro projeto: uma loja de jogos bem simples, que você pode conferir <a class="link-project1" target="_blank" href="https://site-gamesshop-eta-murex.vercel.app">aqui</a>. Esse marco representa o início da minha jornada na programação, um passo que, meses antes, eu jamais imaginei que estaria dando. Esse projeto não apenas solidificou meu aprendizado, mas também me motivou a seguir em frente nessa nova área.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="zoom-in-right">
+                        <div class="timeline-dot"></div>
+                        <div class="date">07/2024</div>
+                        <div class="timeline-content">
+                            <h4>Início do Meu Portfólio Pessoal</h4>
+                            <p>
+                                Após meses de estudo diário e dedicação, finalmente comecei a construir meu portfólio pessoal em julho de 2024, depois de um período de procrastinação. Agora, consigo perceber uma diferença significativa nos meus conhecimentos desde o início da minha jornada, o que me motiva a continuar melhorando e me desenvolvendo ainda mais na área.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="zoom-in-left">
+                        <div class="timeline-dot"></div>
+                        <div class="date">Agosto de 2024</div>
+                        <div class="timeline-content">
+                            <h4>Preparando para o Futuro</h4>
+                            <p>
+                                Estudando todos os dias, estou chegando ao final do meu aprendizado em front-end. Em poucos meses, pretendo iniciar o estudo do back-end, ampliando ainda mais minhas habilidades. Com o objetivo de começar a trabalhar na área, estou me lançando como freelancer desenvolvedor web, oferecendo serviços de criação de sites personalizados para pequenas empresas. Se você precisa de um site incrível para o seu negócio, entre em contato e vamos transformar suas ideias em realidade!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-out">
+                <a class="link-email" href="mailto:contatodasitepronto@gmail.com" target="_blank">>>> Solicite um orçamento agora!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="title-faq">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>Quais serviços você oferece?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    Disponho de uma variedade de serviços em desenvolvimento web, como criação de sites institucionais, landing pages, páginas de eventos, blogs, portfólios, entre outros. Além do desenvolvimento, posso elaborar todo o conteúdo do seu site, assegurando que ele seja responsivo e otimizado para um desempenho rápido. Também posso gerenciar o registro de domínio e a hospedagem, se necessário.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p> Qual é o processo de criação de um site?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    O processo começa com uma conversa para entender suas necessidades e objetivos. Em seguida, desenvolvo um esboço do site e, após a sua aprovação, passo para o desenvolvimento completo. Após a conclusão, faço os ajustes finais com base no seu feedback e, por fim, lanço o site ao vivo.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>Quanto tempo leva para construir um site?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    O tempo necessário para construir um site depende da complexidade do projeto. Um site mais simples pode ser finalizado em 1 a 2 semanas, enquanto projetos mais avançados podem levar de 2 a 4 semanas ou até mais. Sempre forneço um cronograma estimado antes de iniciar o trabalho, garantindo que você tenha clareza sobre cada etapa do processo.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>Quanto custa desenvolver um site?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    O custo varia de acordo com o tamanho e as funcionalidades do site. Normalmente, o valor fica entre $500 e $2.000, dependendo do que você precisa. Podemos conversar sobre os detalhes do seu projeto para que eu possa te dar um orçamento mais preciso.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>Como funciona a questão da hospedagem e do domínio do meu site?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    A escolha e o pagamento da hospedagem e do domínio são responsabilidade do cliente, mas não se preocupe, eu cuido de toda a parte técnica para você. Posso recomendar provedores confiáveis e, após a contratação, faço toda a configuração necessária para garantir que seu site esteja online e funcionando corretamente.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>Você oferece manutenção e suporte após o lançamento do site?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    Sim, ofereço serviços de manutenção e suporte após o lançamento do site. Esses serviços são cobrados separadamente, com base na quantidade de horas necessárias e na natureza do trabalho, como atualizações de conteúdo, correções de bugs ou suporte técnico. Também disponibilizo contratos de suporte contínuo, personalizados de acordo com suas necessidades. Pequenos ajustes e correções podem ser realizados mediante pagamento separado, garantindo que seu site continue funcionando perfeitamente ao longo do tempo.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>O que acontece se eu precisar de atualizações ou mudanças no meu site no futuro?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    Estou disponível para realizar atualizações ou mudanças no seu site conforme necessário, seja para adicionar novas funcionalidades, alterar o design ou atualizar o conteúdo. Esses serviços são cobrados separadamente, e o custo dependerá da complexidade e do tempo necessário para realizar as alterações. Podemos discutir as opções disponíveis e fornecer um orçamento antes de iniciar qualquer trabalho.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>Como funciona o pagamento pelo desenvolvimento do site?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    Normalmente, divido o pagamento em duas etapas: um depósito inicial para começar o trabalho, e um pagamento final quando o site estiver completo e aprovado. 
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>O que preciso fornecer antes de você começar a desenvolver meu site?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    Antes de começar, precisarei de algumas informações básicas do seu negócio, logotipo, textos, imagens e qualquer conteúdo que deseja incluir. Também discutiremos suas preferências, qualquer funcionalidade específica que você gostaria de adicionar ao site e as seções que você deseja incluir.</div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question >
+                    <p>Como posso acompanhar o progresso do desenvolvimento do meu site?</p>
+                </div>
+                <div class="faq__questions__item__answer">
+                    Durante o desenvolvimento, fornecerei atualizações regulares sobre o progresso do projeto, que podem ser enviadas por mensagem ou e-mail. Também posso enviar fotos e vídeos mostrando como as coisas estão avançando, para que você possa fornecer feedback em tempo real.
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Entre em <span>contato</span></h2>
+        <form id="contactForm" class="form-container" action="https://formsubmit.co/4b94e21ce04feeff2a0f569a4b7761db" method="POST" data-aos="zoom-out">
+            <div class="form-col1">
+                <input type="text" name="Nome" placeholder="Nome" required>
+                <input type="tel" name="Telefone" placeholder="Telefone (opcional)">
+                <input type="email" name="E-mail" placeholder="Email" required>
+                <input type="text" name="Assunto" placeholder="Assunto" required>
+            </div>
+            <div class="form-col2">
+                <textarea name="Descrição" placeholder="Descrição do Projeto" required></textarea>
+                <button id="button-submit" type="submit">Enviar Mensagem</button>
+            </div>
+            <input type="hidden" name="_subject" value="NOVO CONTATO">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks.html">
+        </form>
+        <div class="contact-info" data-aos="zoom-out">
+            <p>
+                <i class="bi bi-geo-alt"></i>
+                Curitiba, PR.
+            </p>
+            <a href="mailto:contatodasitepronto@gmail.com" target="_blank">
+                <i class="bi bi-envelope"></i>
+                contatodasitepronto@gmail.com
+            </a>
+        </div>
+        <img src="./images/logo_sitepronto_transparent.png" alt="Logo da Empresa Site Pronto" data-aos="zoom-out" data-aos-duration="1000">
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="section-links">
+                <li>
+                    <a href="#faq">Dúvidas</a>
+                </li>
+                <li>
+                    <a href="#services">Serviços</a>
+                </li>
+                <li>
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+                <li>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <a href="#home">Início</a>
+                </li>
+            </ul>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.instagram.com/siteprontoweb/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:contatodasitepronto@gmail.com" target="_blank">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/lucazmenezez" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/lucas-menezes-39b310256/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-rights">
+                <p>
+                    &copy; 2024 Lucas Menezes | Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
