@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                         },
                         {
                             match: 'ENDERECO_DO_THANKS',
-                            replacement: 'http://127.0.0.1:5501/dist/thanks.html'
+                            replacement: 'https://sitepronto.vercel.app/thanks.html'
                         },
                         {
                             match: /url\(\.\.\/images\//g,
