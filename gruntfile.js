@@ -19,15 +19,8 @@ module.exports = function(grunt) {
                 files: [
                     // Copia o HTML final para a pasta dist
                     { expand: true, cwd: 'prebuild/', src: ['index.html', 'thanks.html'], dest: 'dist/' },
-                    // Copia todas as imagens para a pasta dist
-                    { expand: true, cwd: 'src/', src: ['images/**'], dest: 'dist/' },
+                    { expand: true, cwd: 'src/images/', src: ['**/*.{png,jpg,gif,svg}'], dest: 'dist/images/' },
                 ]
-            },
-            images: {
-                expand: true,
-                cwd: 'src/images/',
-                src: ['**/*.{png,jpg,gif,svg}'],
-                dest: 'dist/images/'
             },
             favicon: {
                 expand: true,
@@ -154,5 +147,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.registerTask('default', ['watch'])
-    grunt.registerTask('build', ['cssmin:production', 'htmlmin:dist', 'replace:dist', 'clean', 'uglify', 'copy:dist', 'copy:images', 'copy:favicon', 'imagemin:dist'])
+    grunt.registerTask('build', ['cssmin:production', 'htmlmin:dist', 'replace:dist', 'clean', 'uglify', 'copy:favicon', 'imagemin:dist'])
 }
