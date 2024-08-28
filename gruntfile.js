@@ -94,8 +94,12 @@ module.exports = function(grunt) {
                             replacement: 'http://127.0.0.1:5501/dist/thanks.html'
                         },
                         {
-                            match: /url\(\.\.\/\.\.\/images\//g,
+                            match: /url\(\.\.\/images\//g,
                             replacement: 'url(images/'
+                        },
+                        {
+                            match: /src\/images\//g,
+                            replacement: 'images/'
                         }
                     ]
                 },
