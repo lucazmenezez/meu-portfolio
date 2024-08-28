@@ -92,6 +92,10 @@ module.exports = function(grunt) {
                         {
                             match: 'ENDERECO_DO_THANKS',
                             replacement: 'http://127.0.0.1:5501/dist/thanks.html'
+                        },
+                        {
+                            match: /url\(\.\.\/\.\.\/images\//g,
+                            replacement: 'url(images/'
                         }
                     ]
                 },
@@ -101,6 +105,12 @@ module.exports = function(grunt) {
                         flatten: true,
                         src: ['prebuild/index.html', 'prebuild/thanks.html'],
                         dest: 'dist/'
+                    },
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: ['dist/styles/*.css'],
+                        dest: 'dist/styles/'
                     }
                 ]
             }
@@ -147,5 +157,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.registerTask('default', ['watch'])
-    grunt.registerTask('build', ['cssmin:production', 'htmlmin:dist', 'replace:dist', 'clean', 'uglify', 'copy:favicon', 'imagemin:dist'])
+    grunt.registerTask('build', ['cssmin:production', 'htmlmin:dist', 'replace:dist', 'clean', 'uglify',  'copy:dist', 'copy:favicon', 'imagemin:dist'])
 }
